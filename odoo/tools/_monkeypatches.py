@@ -31,7 +31,7 @@ else:
     xlsx.ET_has_iterparse = True
     xlsx.Element_has_iter = True
 
-FileStorage.save = lambda self, dst, buffer_size=1<<20: copyfileobj(self.stream, dst, buffer_size)
+# FileStorage.save = lambda self, dst, buffer_size=1<<20: copyfileobj(self.stream, dst, buffer_size)
 
 Request.json_module = Response.json_module = scriptsafe
 
